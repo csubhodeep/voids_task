@@ -61,7 +61,7 @@ def train(df: pd.DataFrame) -> None:
         model.fit(train, past_covariates=covs)
 
         # Forecast next 90 days
-        forecast = model.predict(len(val))
+        forecast = model.predict(FORECAST_HORIZON)
 
         # Evaluate the model on the validation set (optional)
         if val:
