@@ -1,7 +1,11 @@
 darts
 pandas
+pyarrow
 numpy
 scipy
 SQLAlchemy
-pyscopg2
+psycopg2-binary
+gspread
+google-auth
+google-auth-oauthlib
 -e file:src/
