@@ -1,0 +1,7 @@
+darts
+pandas
+numpy
+scipy
+SQLAlchemy
+pyscopg2
+-e file:src/

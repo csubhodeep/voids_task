@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sales_forecaster"
+version = "1.0.0"
+description = "This project contains the application code for the sales forecaster"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "S Chakraborty", email = "c.subhodeep@hotmail.com" }
+]
+
+maintainers = [
+  {name = "VOIDS"}
+]
+
+[tool.setuptools]
+package-dir = {"" = "."}
