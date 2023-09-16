@@ -5,6 +5,8 @@ BASE_PATH = pathlib.Path(__file__).parent.parent.parent.parent
 
 DATA_PATH = BASE_PATH / "data"
 
+MODEL_PATH = BASE_PATH / "models"
+
 
 # DATA SOURCES
 
@@ -38,5 +40,9 @@ PATH_TO_GOOGLE_CREDS = BASE_PATH / "creds/jobs-398713-d8caacaf8ab0.json"
 API_LINK = "https://archive-api.open-meteo.com/v1/archive?latitude=53.5507&longitude=9.993&start_date=2020-10-01&end_date=2022-09-30&daily=temperature_2m_mean,shortwave_radiation_sum&timezone=Europe%2FBerlin"
 
 
+# Training
+FORECAST_HORIZON = 90
+CONTEXT_HORIZON = 180
 
-
+RND = 42
+VAL_START_DATE = '2022-06-30'
